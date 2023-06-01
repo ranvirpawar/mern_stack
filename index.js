@@ -120,8 +120,56 @@
 // console.log(mult(14));
 
 
-// 4️⃣🍀 ARROW FUNCTIONS
+// 4️⃣🍀  Fat ARROW FUNCTIONS
 
-// const sum = () =>   
+// Normal way of writing Functions   
+// function sum(){
+//     let a = 5; b=6;
+//     let sum = a+b;
+//     return ` the sum of two numbers is  ${sum}`;
+// }
+// console.log(sum ())
+    // How to convert it into Fat ARROW Function
+
+// const sum = (a,b) => {
+    
+//     return ` the sum of two numbers is  ${(a+b)}`;
+// }
+// console.log(sum(3,4))
+
+
+/*5️⃣ ARRAYS in Javascript */
+    // in javascript only we can stored multiple datatypes in single array
+        // in js ,we have an Array Class, and 
+        // arrays are prototype of this class
+// var myfriends = new Array; /// optional line
+
+// var myfriends = [ 'ramesh',  'arjun',  'vishal' ]
+// console.log(myfriends[-1]);
+// console.log(myfriends[myfriends.length-1]);
+ //for loop
+// for(var i=0; i<myfriends.length; i++){
+//     console.log(myfriends[i]);
+// } 
+//  ES6 introduced For...In and For... Of loop
+var myfriends = [ 'ramesh',  'arjun',  'vishal' ]
+
+//  for(let elements in myfriends){
+//     console.log(elements);
+//  } return index of arrays
+
+// for ( let elements of myfriends){
+//     console.log(elements)
+// }
+
+// myfriends.forEach(function(elements, index, array){
+//     console.log(elements + " index No : " + index + " " + array)
+// })
+ 
+myfriends.forEach((elements, index, array) => {
+    console.log(elements + " index No : " + index + " " + array)
+});
+
+
 
 

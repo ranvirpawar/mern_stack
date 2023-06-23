@@ -43,7 +43,7 @@ http.createServer(function(req, res){
 * `.listen()` is used to access port number
 
 
-## Importing Modules ##
+## Modules ##
 > creating a module
 ```
 function add(a,b ){
@@ -70,9 +70,25 @@ result1 = objectname.add(4,5)
 result2 = objectname.sub(4,6)
 
 console.log("The output is " + result1 + " " + result2)
-
 ```
-# event handling module #
+> Show current date and time
+* creating a module `datetime.js`
+```
+ function getCurrentDateTime (){
+    const currentDateTime = new Date();
+    return currentDateTime.toISOString();
+};
+exports.getCurrentDateTime = getCurrentDateTime
+```
+* import it in `app.js`
+```
+const datetime = require('./datetime.js');
+
+const ans = datetime.getCurrentDateTime();
+console.log(ans + " is current date and time ")
+```
+
+## event handling module ##
 >events 
 ```
 const EventEmitter = require('events');

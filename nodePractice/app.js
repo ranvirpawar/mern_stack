@@ -1,11 +1,13 @@
-// var http = require('http')
+var http = require('http')
 
-// http.createServer(function(req, res){
+http.createServer(function(req, res){
 
-//     res.write(200, { 'Content-Type' : 'text/html'})
-//     res.write("Welcome Back Alien") 
-//     res.end()
-// }).listen(8080)
+    res.write(200, { 'Content-Type' : 'text/html'})
+    res.write("Welcome Back Alien") 
+    res.end()
+}).listen(8080)
+
+
 var objectname =  require('./add.js')
 
 result1 = objectname.add(4,5)

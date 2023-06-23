@@ -15,13 +15,25 @@
  if you want to use someone else's module then we have concept of ***NPM***
 
 #### NPM node package manager ####
-> it has millions of packages ( 1 million above)
-> you can also push your module into NPM
-> NPM is part of GITHUB
-> eg mongodb, socket.io, express 
+ it has millions of packages ( 1 million above)
+ you can also push your module into NPM
+ NPM is part of GITHUB
+ eg mongodb, socket.io, express 
 
 ##### modules #####
-> collection of diff packages
-> to used module use --> require ' '
-> module should be exported before i.e module.exports.name = name 
+* collection of diff packages
+* to used module use --> require ' '
+* module should be exported before i.e module.exports.name = name 
+
+## Creating A Server ## 
+
+```var http = require('http')
+
+http.createServer(function(req, res){
+
+    res.write(200, { 'Content-Type' : 'text/html'})
+    res.write("Welcome Back Alien") 
+    res.end()
+}).listen(8080) 
+```
 

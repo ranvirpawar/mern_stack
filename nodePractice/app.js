@@ -72,4 +72,13 @@ const ans = datetime.getCurrentDateTime();
 console.log(ans + " is current date and time ")
 
 
+
+const fs = require('fs');
+const { error } = require('console');
+
+fs.readFile('abc.txt', (err,data) =>{
+  console.log(data)
+})
+
+
  

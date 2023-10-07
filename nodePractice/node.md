@@ -5,7 +5,7 @@
  in java the server can run upto 200 threads which is used to handle multiple requests and responses
  js does not have concept of threads
  1 Non Blocking I/O 2 Asynchronus
- node is used for i/o intensive work not useful for cpu inten-sive work.
+ node is used for i/o intensive work not useful for cpu intensive work.
  node js is single threaded but behind the scene the kernel is using multiple threads
  fast and flexible
 
